@@ -1,6 +1,6 @@
 <template>
   <v-app>
-		<Header />
+    <Header />
     <v-content>
       <v-container>
         <router-view></router-view>
@@ -14,6 +14,9 @@ import Header from "./components/Header.vue";
 
 export default {
   components: { Header },
+  created() {
+    this.$store.dispatch("initStocks");
+  },
 };
 </script>
 
