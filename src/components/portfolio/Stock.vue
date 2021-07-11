@@ -5,7 +5,8 @@
         <strong
           >{{ stock.name }}
           <small
-            >(Preco: {{ stock.price }} | Qrde: {{ stock.quantity }})</small
+            >(Preco: {{ stock.price | currency }} | Qtde:
+            {{ stock.quantity }})</small
           ></strong
         >
       </v-card-title>
